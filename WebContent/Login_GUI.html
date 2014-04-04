@@ -1,0 +1,91 @@
+<!DOCTYPE html>  
+<html lang="en"><head>  
+<meta charset="utf-8">  
+<title>Login</title>  
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />  
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />  
+<link rel='stylesheet' href='Login_TEMP.css' type='text/css' />  
+<script type="text/javascript">
+ 
+function isValid(){
+	 var u= document.login.username.value;
+	 var lu= u.length;
+	 if(lu==0){
+		 alert("Please enter a valid User ID");
+		 document.login.username.focus();
+	 }		
+}
+function isValidP(){
+	 var p= document.login.password.value;
+	 var lp= p.length;
+	 if(lp==0){
+		 alert("Please enter a valid PASSWORD");
+		 document.login.password.focus();
+	 }		
+}	
+</script>
+<style fprolloverstyle>
+a {font-family:Georgia,serif; font-size:small}
+a:link {color:white;}
+a:visited {color: white;}
+a:hover {text-decoration: none; color: #ff9900;}
+
+
+
+</style>  
+
+</head>  
+
+<body onload="document.registration.userid.focus()">
+
+  
+<div id="big_wrapper">
+<header id="top_header">  
+<h1>Online Examination Portal</h1>
+</header>
+
+<nav id="top_menu">
+		
+		<ul>
+
+
+		<li><a href="Login_GUI.html">Home</a></li>
+		<li><a href="Instruction_GUI.html">Instruction</a></li>
+		<li><a href="About_GUI.html">About Us</a></li>
+		<li><a href="Help_GUI.html">Help</a></li>
+		
+		
+		</ul>
+		</nav>
+
+<form name='login' action="/OnlineExaminationSystem/Login" onSubmit="return formValidation();" method="post">
+
+<section id="main_section">
+<div id="new_div"> 
+
+<ul>
+
+<font color="white" face="arial" size="5">
+<b>Login here to give exam!</b></font><br><br><br><br>
+
+
+<li><label for="userid">User id:</label></li>  
+<li><input type="text" name="username" size="12" onblur="isValid()"/></li>  
+<li><label for="passid">Password:</label></li>  
+<li><input type="password" name="password" size="12" onblur="isValidP()"/></li>
+
+<br><br>
+<font color="red">If you have not registered yet please sign up</font><br><br>
+
+<li><input type="submit" name="signin" value="Sign In"/></li>
+<li><input type="button" name="signup" onclick="location.href='Registration_GUI.html'" value="Sign Up"/></li>
+</ul>
+</section>
+</div>
+
+</div>
+</form>
+
+</body>
+
+</html>

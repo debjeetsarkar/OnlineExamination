@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//D TD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<body>
+<html lang="en"><head>  
+
+<title>Server page - Question Answer</title>  
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />  
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />  
+<link rel='stylesheet' href='adminpage1.css' type='text/css' />  
+<script src="sample-registration-form-validation.js"></script>  
+</head>  
+<body onload="document.registration.userid.focus()  bgcolor="silver"">
+
+  
+<div id="big_wrapper">
+<header id="top_header">  
+<h1>Online Examination Portal</h1>
+</header>
+
+
+
+	
+<form name="registration" action="/OnlineExaminationSystem/Admin" method="post" onSubmit="return formValidation();">
+<div id="new_div">
+<section id="main_section">  
+<ul> 
+<li><b><font size=+2><p align="center">Set your Questions and Answer</p></font></b><li/><br><br>
+<li><label for="enterquestionid"><b>Enter Question ID:</b></label></li>  
+<li><input type="text" name="questionid" size="20" /></li> 
+<li><label for="enterquestion"><b>Enter Question:</b></label></li>  
+<li><input type="text" name="question" size="50" /></li>  
+<li><label for="enteranswera"><b>Enter Answer(A):</b></label></li>  
+<li><input type="text" name="optiona" size="50" /></li>  
+<li><label for="enteranswerb"><b>Enter Answer(B):</b></label></li>  
+<li><input type="text" name="optionb" size="50" /></li>
+<li><label for="enteranswerc"><b>Enter Answer(C):</b></label></li>  
+<li><input type="text" name="optionc" size="50" /></li>  
+<li><label for="enteranswerd"><b>Enter Answer(D):</b></label></li>  
+<li><input type="text" name="optiond" size="50" /></li>
+<li><label for="institute"><b>Correct Answer:</b></label></li>  
+<li><input type="text" name="answer" size="12" /></li> 
+
+
+<p><input type="submit" value="Submit" name="submit">
+<b><input type="reset" value="Reset" name="reset"></b></p>
+ 
+
+</ul>
+ </section>
+</div>
+</form>
+</body> 
+</html>
